@@ -198,6 +198,11 @@ a.p-btn {
   font-size: 4rem;
   font-family: 'Frank Ruhl Libre', serif;
 }
+@media screen and (max-width: 768px) {
+  .banner .banner-outer .banner-left .banner-left-inner h1 {
+    text-align: center;
+  }
+}
 .banner .banner-outer .banner-left .banner-left-inner h1 span {
   color: var(--primary-color);
   display: block;
