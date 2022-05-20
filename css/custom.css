@@ -455,6 +455,14 @@ a.p-btn {
 .gallery {
   width: 100%;
 }
+.gallery .padtop {
+  padding-top: 1rem;
+}
+@media screen and (max-width: 480px) {
+  .gallery .padtop {
+    padding-top: 0px;
+  }
+}
 @media screen and (max-width: 480px) {
   .gallery img {
     margin: 5px 0px;
