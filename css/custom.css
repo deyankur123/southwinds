@@ -32,7 +32,7 @@ p {
 }
 @media screen and (max-width: 480px) {
   .padbot {
-    padding-bottom: 20px ;
+    padding-bottom: 20px;
   }
 }
 .main-nav {
@@ -197,6 +197,7 @@ a.p-btn {
   width: 100%;
   color: #fff;
   margin-bottom: 2rem;
+  text-align: center;
 }
 .banner .banner-outer .banner-left .banner-left-inner a {
   text-decoration: none;
@@ -218,13 +219,19 @@ a.p-btn {
   /* left: 50%; */
   right: 0% !important;
   top: 57%;
+  left: 40%;
   width: 60%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
 }
+@media screen and (max-width: 768px) {
+  .banner .banner-outer .banner-right .banner-right-inner {
+    left: 0;
+  }
+}
 .banner .banner-outer .banner-right .banner-right-inner form {
   padding: 1.5rem;
-  border: 2px solid #fff;
+  border: none;
   border-radius: 6px;
   background: -webkit-gradient(linear, left top, left bottom, from(#0000008d), to(#0000003d));
   background: linear-gradient(180deg, #0000008d, #0000003d);
@@ -282,6 +289,12 @@ a.p-btn {
   font-weight: bold;
   display: inline-block;
   margin-top: 1rem;
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
+  .banner .banner-outer .banner-right .banner-right-inner form .form-group button {
+    width: 80%;
+  }
 }
 .about {
   width: 100%;
@@ -296,14 +309,23 @@ a.p-btn {
     font-size: 1.7rem;
   }
 }
-.about .about-left img {
+.about h2 {
+  font-size: 3rem;
+  font-family: 'Frank Ruhl Libre', serif;
+}
+@media screen and (max-width: 768px) {
+  .about h2 {
+    font-size: 2.1rem;
+  }
+}
+.about-left img {
   padding: 0.5rem 0;
   width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.about .about-mid img {
+.about-mid img {
   padding: 0.5rem 0;
   width: 100%;
   height: auto;
@@ -311,38 +333,38 @@ a.p-btn {
      object-fit: cover;
 }
 @media screen and (max-width: 480px) {
-  .about .about-mid img {
+  .about-mid img {
     height: 400px;
   }
 }
-.about .about-right {
+.about-right {
   width: 100%;
 }
-.about .about-right .about-right-heading h2 {
+.about-right .about-right-heading h2 {
   font-size: 3rem;
   font-family: 'Frank Ruhl Libre', serif;
 }
 @media screen and (max-width: 768px) {
-  .about .about-right .about-right-heading h2 {
+  .about-right .about-right-heading h2 {
     font-size: 2.1rem;
   }
 }
-.about .about-right .about-right-para {
+.about-right .about-right-para {
   width: 100%;
 }
-.about .about-right .about-right-para p {
+.about-right .about-right-para p {
   margin: 2rem 0;
 }
-.about .about-right .about-right-para ul {
+.about-right .about-right-para ul {
   position: relative;
   padding-left: 0rem;
 }
-.about .about-right .about-right-para ul li {
+.about-right .about-right-para ul li {
   list-style: none;
   position: relative;
   padding-left: 2rem;
 }
-.about .about-right .about-right-para ul li::before {
+.about-right .about-right-para ul li::before {
   content: '';
   display: block;
   position: absolute;
@@ -352,11 +374,34 @@ a.p-btn {
   width: 1.5rem;
   background: var(--primary-color);
 }
-.about .about-right .about-carousel {
+.about-right .about-carousel {
   margin: 2rem 0;
 }
 .yt-video {
   width: 100%;
+}
+.yt-video h3 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  font-family: 'Frank Ruhl Libre', serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .yt-video h3 {
+    font-size: 1.7rem;
+  }
+}
+.yt-video h2 {
+  font-size: 3rem;
+  font-family: 'Frank Ruhl Libre', serif;
+  text-align: center;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 768px) {
+  .yt-video h2 {
+    font-size: 2.1rem;
+  }
 }
 .yt-video iframe {
   width: 100%;
@@ -366,6 +411,7 @@ a.p-btn {
   width: 100%;
 }
 .amenities h3 {
+  text-align: center;
   font-size: 2rem;
   color: var(--primary-color);
   text-transform: uppercase;
@@ -447,7 +493,7 @@ a.p-btn {
 }
 .amenities .amenities-carousel .item .text p {
   margin: 1rem auto;
-  width: 85%;
+  width: 90%;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
@@ -541,6 +587,10 @@ a.p-btn {
 }
 .floor-plan {
   width: 100%;
+  background-attachment: fixed;
+  background-image: url('../images/slider_img_bg.png');
+  -webkit-box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
 }
 .floor-plan h2 {
   color: var(--primary-color);
@@ -556,6 +606,7 @@ a.p-btn {
 .floor-plan h3 {
   font-size: 3rem;
   font-family: 'Frank Ruhl Libre', serif;
+  color: #ffffff;
 }
 @media screen and (max-width: 768px) {
   .floor-plan h3 {
