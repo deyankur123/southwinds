@@ -949,6 +949,7 @@ a.p-btn {
   }
   .banner .banner-right {
     height: 70vh !important;
+    padding: 50px 0px;
   }
   .banner .banner-left {
     width: 85% !important;
