@@ -19,11 +19,21 @@
 .padtop {
   padding-top: 100px;
 }
+@media screen and (max-width: 480px) {
+  .padtop {
+    padding-top: 44px;
+  }
+}
 p {
   font-size: 16px;
 }
 .padbot {
   padding-bottom: 60px;
+}
+@media screen and (max-width: 480px) {
+  .padbot {
+    padding-bottom: 20px ;
+  }
 }
 .main-nav {
   width: 100%;
