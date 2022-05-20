@@ -220,6 +220,7 @@ a.p-btn {
 @media screen and (max-width: 767px) {
   .banner .banner-outer .banner-left .banner-left-inner p {
     margin-bottom: 0px;
+    text-align: center;
   }
 }
 .banner .banner-outer .banner-left .banner-left-inner a {
