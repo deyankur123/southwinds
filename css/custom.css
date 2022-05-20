@@ -103,6 +103,13 @@ p {
   border-radius: 50%;
   position: relative;
   margin-right: 10px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.navtop .navtop-outer .navtop-right .navtop-inner .navtop-inner-content .icon:hover {
+  background-color: #e7a24d;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
 }
 .navtop .navtop-outer .navtop-right .navtop-inner .navtop-inner-content .icon i {
   font-size: 20px;
@@ -149,6 +156,13 @@ a.p-btn {
   padding: 0.7rem 1rem;
   margin-right: 1.5rem;
   font-weight: bold;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+a.p-btn:hover {
+  background-color: #dea764;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 @media screen and (max-width: 768px) {
   a.p-btn {
@@ -167,6 +181,17 @@ a.p-btn {
   .banner .button-container {
     text-align: center;
   }
+}
+.banner a,
+.banner button {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.banner a:hover,
+.banner button:hover {
+  background-color: #e7a24d !important;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .banner .banner-outer {
   width: 100%;

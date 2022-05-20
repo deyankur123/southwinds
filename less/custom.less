@@ -101,6 +101,11 @@ p {
                         border-radius: 50%;
                         position: relative;
                         margin-right: 10px;
+                        transition: 0.5s all;
+                        &:hover{
+                            background-color: #e7a24d;
+                            transition: 0.5s all;
+                        }
 
                         i {
                             font-size: 20px;
@@ -170,7 +175,11 @@ a.p-btn {
     padding: 0.7rem 1rem;
     margin-right: 1.5rem;
     font-weight: bold;
-
+    transition: all 0.7s;
+&:hover{
+    background-color: #dea764;
+    transition: all 0.3s;
+}
     @media screen and (max-width:768px) {
         margin-right: 0px;
     }
@@ -195,7 +204,14 @@ a.p-btn {
         }
 
     }
+a,button{
+    transition: all 0.5s;
+    &:hover{
+        background-color: #e7a24d !important;
+        transition: all 0.5s;
+    }
 
+}
 
     .banner-outer {
         width: 100%;
@@ -1086,6 +1102,7 @@ a.p-btn {
 
         .banner-right {
             height: 70vh !important;
+            padding: 50px 0px;
         }
 
         .banner-left {
