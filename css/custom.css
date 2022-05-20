@@ -936,6 +936,7 @@ a.p-btn {
   }
   .banner {
     height: auto !important;
+    padding-top: 3rem;
   }
   .banner .banner-outer {
     height: auto !important;
