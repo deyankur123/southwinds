@@ -207,7 +207,7 @@ a.p-btn:hover {
 }
 @media screen and (max-width: 767px) {
   .banner .banner-outer .banner-left {
-    height: 85vh;
+    height: 80vh;
   }
 }
 .banner .banner-outer .banner-left .banner-left-inner {
@@ -649,11 +649,15 @@ a.p-btn:hover {
   bottom: 0px;
 }
 .floor-plan {
+  height: 300px;
   width: 100%;
   background-attachment: fixed;
+  background-size: cover ;
+  background-position: center;
   background-image: url('../images/slider_img_bg.png');
   -webkit-box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.241);
           box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.241);
+  background-repeat: no-repeat;
 }
 .floor-plan .button-container {
   padding: 20px 0px;
